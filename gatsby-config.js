@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Dylan Steck`,
+    description: `Interface designer and developer. High school student. Currently building the future of digital information at Stecknologies.`,
+    author: `@dylsteck`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,13 +18,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `dylsteck`,
+        short_name: `dylsteck`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/DS_Logo_Styled.png`, // This path is relative to the root of the site.
       },
     },
     {

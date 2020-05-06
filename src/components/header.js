@@ -1,35 +1,45 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import {FaTwitter, FaLinkedin, FaMediumM, FaGithubAlt} from "react-icons/fa"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      logoStyled: file(relativePath: { eq: "DS_Logo_Styled.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  return(
   <header
+    class="ayo"
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        margin: '2.5%'
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+    <Img
+      fluid={data.logoStyled.childImageSharp.fluid}
+      style={{maxWidth: '5%'}}/>
+      <ul style={{listStyleType: 'none', margin: '7.5% -2.5%', maxWidth: '5%',  "& li": {display: 'block', marginBottom: '2.5%', color: '#333333'}}}>
+        <li><FaTwitter /></li>
+        <li><FaLinkedin /></li>
+        <li><FaMediumM /></li>
+        <li><FaGithubAlt /></li>
+      </ul>
     </div>
   </header>
-)
+)}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
