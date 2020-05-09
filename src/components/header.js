@@ -17,12 +17,7 @@ const Header = ({ siteTitle }) => {
     }
   `)
   return(
-  <header
-    class="ayo"
-    style={{
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
     <div
       style={{
         margin: '2.5%'
@@ -31,11 +26,11 @@ const Header = ({ siteTitle }) => {
     <Img
       fluid={data.logoStyled.childImageSharp.fluid}
       style={{maxWidth: '5%'}}/>
-      <ul style={{listStyleType: 'none', margin: '7.5% -2.5%', maxWidth: '5%',  "& li": {display: 'block', marginBottom: '2.5%', color: '#333333'}}}>
-        <li><FaTwitter /></li>
-        <li><FaLinkedin /></li>
-        <li><FaMediumM /></li>
-        <li><FaGithubAlt /></li>
+      <ul style={{listStyleType: 'none', margin: '10% -2.5%', marginBottom: '0', maxWidth: '5%'}}>
+        <li className="fawesome"><FaTwitter /></li>
+        <li className="fawesome"><FaLinkedin /></li>
+        <li className="fawesome"><FaMediumM /></li>
+        <li className="fawesome"><FaGithubAlt /></li>
       </ul>
     </div>
   </header>

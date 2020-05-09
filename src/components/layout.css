@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;500;600&display=swap');
 
+html{
+  font-family: 'Public Sans', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 
+.fawesome{
+  margin-bottom: 5%;
+  padding: 0;
+  display: block;
+}
+.fawesome svg{
+  color: #333333;
+}
 /* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
