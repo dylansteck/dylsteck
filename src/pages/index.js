@@ -22,13 +22,15 @@ const IndexPage = () => {
   return(
   <Layout>
     <SEO title="Home"/>
-    <div style={{position: 'relative', top: '0'}}>
-      <h1 style={{float: 'left', fontWeight: 'bold', fontSize: '4em', color: '#333333'}}>Interfaces should be interactive, intuitive, and interesting. I help bring them to life.</h1>
-      <Img
-        fluid={data.dylanHeadshot.childImageSharp.fluid}
-        style={{maxWidth: '40%', float: 'right'}}/>
+    <div style={{position: 'relative', top: '10vh'}}>
+      <img src={logo_background} style={{width: '75%', zIndex: -1, textAlign: 'center', margin: '0 auto', display: 'block', top: '2.5vh'}} />
+      <div style={{position: 'absolute', top: '5vh'}}>
+        <h1 style={{float: 'left', fontWeight: 'bold', fontSize: '4em', color: '#333333', zIndex: 1}}>Interfaces should be interactive, intuitive, and interesting. I help bring them to life.</h1>
+        <Img
+          fluid={data.dylanHeadshot.childImageSharp.fluid}
+          style={{width: '25vw', float: 'right', marginRight: '15%', position: 'relative'}}/>
       </div>
-    <img src={logo_background} style={{width: '75%', zIndex: '-1', textAlign: 'center', margin: '0 auto', display: 'block'}} />
+    </div>
     <Portfolio />
   </Layout>
 )}
