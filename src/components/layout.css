@@ -7,6 +7,10 @@ html{
   overflow-x: hidden;
 }
 
+a{
+  text-decoration: none;
+}
+
 .fawesome{
   margin-bottom: 5%;
   padding: 0;

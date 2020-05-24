@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 const TopNav = () => {
@@ -20,9 +20,9 @@ const TopNav = () => {
       fluid={data.logoStyled.childImageSharp.fluid}
       style={{width: '5vw', objectFit: 'cover', margin: '5%', gridColumn: 1}}/>
     <ul style={{listStyleType: 'none', marginRight: '2.5%', gridColumn: 2, textAlign: 'right'}}>
-      <li style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>About</li>
-      <li style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>Work</li>
-      <li style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>Contact</li>
+      <Link to="/" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>Home</Link>
+      <Link to="/about" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>About</Link>
+      <Link to="/#portfolio" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>Work</Link>
     </ul>
   </header>
  )

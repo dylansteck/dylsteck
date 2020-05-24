@@ -20,7 +20,7 @@ const Portfolio = () => (
       }
     `}
     render={data => (
-      <div className="portfolio" style={{marginTop: '65vh'}}>
+      <div className="portfolio" style={{marginTop: '65vh'}} id="portfolio">
         <h1 style={{fontSize: '6.5vw', marginBottom: '10vh'}}>Take a look at what I've built: </h1>
         <div className="portfolio-grid" style={{margin: '2.5%'}}>
           {data.gcms.portfolioPieces.map(piece => {
