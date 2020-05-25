@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import SocialIcons from "./socialicons"
 import TopNav from "./topnav";
-import Contact from "../components/contact"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -37,7 +36,6 @@ const Layout = ({ children }) => {
       >
         {/*<SocialIcons/>*/}
         <main>{children}</main>
-        <Contact />
       </div>
     </>
   )
