@@ -15,10 +15,12 @@ const TopNav = () => {
     }
   `)
   return(
-  <header style={{display: 'grid', width: '100%', height: '15%', gridTemplateColumns: '10% 90%', position: 'fixed'}}>
-    <Img
-      fluid={data.logoStyled.childImageSharp.fluid}
-      style={{width: '5vw', objectFit: 'cover', margin: '5%', gridColumn: 1}}/>
+  <header style={{display: 'grid', width: '100%', height: '15%', gridTemplateColumns: '10% 90%', position: 'fixed', top: 0, backgroundColor: 'white'}}>
+    <Link to="/">
+      <Img
+        fluid={data.logoStyled.childImageSharp.fluid}
+        style={{width: '5vw', objectFit: 'cover', margin: '5%', gridColumn: 1}}/>
+    </Link>
     <ul style={{listStyleType: 'none', marginRight: '2.5%', gridColumn: 2, textAlign: 'right'}}>
       <Link to="/" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>Home</Link>
       <Link to="/about" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>About</Link>
