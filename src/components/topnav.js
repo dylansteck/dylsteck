@@ -24,6 +24,7 @@ const TopNav = () => {
     <ul style={{listStyleType: 'none', marginRight: '2.5%', gridColumn: 2, textAlign: 'right'}}>
       <Link to="/" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>Home</Link>
       <Link to="/about" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>About</Link>
+      <Link to="mailto:me@dylansteck.com" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>Contact</Link>
       <Link to="/#portfolio" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>Work</Link>
     </ul>
   </header>

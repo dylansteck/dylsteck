@@ -3,7 +3,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Portfolio from "../components/portfolio"
-import Contact from "../components/contact"
 import logo_background from "../images/DS_Background.svg"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -33,7 +32,6 @@ const IndexPage = () => {
       </div>
     </div>
     <Portfolio />
-    <Contact />
   </Layout>
 )}
 

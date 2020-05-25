@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import SEO from "../components/seo"
 import logo_background from "../images/DS_Background.svg"
 import Img from "gatsby-image"
-import Contact from "../components/contact"
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -21,9 +20,9 @@ const About = () => {
 return(
   <Layout>
     <SEO title="About" />
-    <div style={{position: 'relative', top: '5vh', marginBottom: '35vh'}}>
+    <div>
       <img src={logo_background} style={{width: '50vw', zIndex: -1, textAlign: 'center', margin: '0 auto', display: 'block', top: '2.5vh', left: '25vw', position: 'fixed'}} />
-      <div style={{position: 'absolute', top: '5vh'}}>
+      <div style={{position: 'absolute', top: '5vh', maxWidth: '85vw'}}>
         <h4 style={{float: 'left', fontWeight: 'bold', fontSize: '2.5em', color: '#221F20', zIndex: 1}}>
         I'm a seventeen year old interface designer and developer from New York City with 7+ years of coding experience.
         I've built everything from iPhone apps to desktop apps to event posters.
@@ -34,7 +33,6 @@ return(
           style={{width: '25vw', float: 'right', marginRight: '15%', position: 'relative'}}/>
       </div>
     </div>
-    <Contact />
   </Layout>
 )
 }

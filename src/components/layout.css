@@ -31,7 +31,6 @@ a{
 @media (max-width: 850px) {
   .portfolio{ margin-top: 100vh !important;}
   .portfolio-piece{ margin-bottom: 110% !important;}
-  .contact{ margin-top: 90vh !important;}
 }
 
 @media (max-width: 675px) {
@@ -45,7 +44,6 @@ a{
   .portfolio-piece-block{ top: 185% !important; width: 17.5vw !important; height: 17.5vw !important; }
   .portfolio-piece-block-text p { font-size: 2.5vw !important; }
   .portfolio-piece-block-text a { font-size: 2.2vw !important; padding-bottom: 7.5% !important; }
-  .contact{ margin-top: 185vh !important;}
   .portfolio { margin-top: 170vh !important;}
 }
 
@@ -56,9 +54,6 @@ a{
   .portfolio-piece-block-text a { font-size: 2.4vw !important; padding-bottom: 10% !important; }
 }
 
-@media (max-width: 400px){
-  .contact{ margin-top: 240vh !important;} /* kinda sloppy but idk*/
-}
 /* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
