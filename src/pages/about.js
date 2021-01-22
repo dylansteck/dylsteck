@@ -20,9 +20,9 @@ const About = () => {
 return(
   <Layout>
     <SEO title="About" />
-    <div style={{position: 'relative', top: '5vh'}}>
-      <img src={logo_background} style={{width: '75%', zIndex: -1, textAlign: 'center', margin: '0 auto', display: 'block', top: '2.5vh', position: 'sticky'}} />
-      <div style={{position: 'absolute', top: '5vh'}}>
+    <div>
+      <img src={logo_background} style={{width: '50vw', zIndex: -1, textAlign: 'center', margin: '0 auto', display: 'block', top: '2.5vh', left: '25vw', position: 'fixed'}} />
+      <div style={{position: 'absolute', top: '5vh', maxWidth: '85vw'}}>
         <h4 style={{float: 'left', fontWeight: 'bold', fontSize: '2.5em', color: '#221F20', zIndex: 1}}>
         I'm an interface designer and developer from New York City with 9+ years of coding experience.
         I've built and designed everything from iPhone apps to desktop apps to brand strategies to event posters.

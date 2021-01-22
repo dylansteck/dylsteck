@@ -20,16 +20,16 @@ const Portfolio = () => (
       }
     `}
     render={data => (
-      <div className="portfolio" style={{marginTop: '65vh'}} id="portfolio">
+      <div className="portfolio" style={{marginTop: '140vh', zIndex: 1}} id="portfolio">
         <h1 style={{fontSize: '6.5vw', marginBottom: '10vh'}}>Take a look at what I've built: </h1>
-        <div className="portfolio-grid" style={{margin: '2.5%'}}>
+        <div className="portfolio-grid" style={{margin: '2.5%', zIndex: 1}}>
           {data.gcms.portfolioPieces.map(piece => {
             const index = data.gcms.portfolioPieces.indexOf(piece)
             const isEven = !(index % 2)
             const { title, subtitle, featureImage, year, linkType, linkRef } = piece
             //figure out if you need a grid or not
             return (
-              <div className="portfolio-piece" style={{position: 'relative', width: '60vw', height: '40vh', marginBottom: '100vh', float: isEven ? 'left' : 'right'}}>
+              <div className="portfolio-piece" style={{position: 'relative', width: '60vw', height: '40vh', marginBottom: '100vh', float: isEven ? 'left' : 'right', zIndex: 1}}>
                 <div style={{textAlign: isEven ? 'left' : 'right', marginBottom: '15%'}}>
                   <h3 className="title" style={{fontSize: '200%', color: '#545FAB'}}>{title}</h3>
                   <p className="subtitle" style={{fontSize: '150%', color: '#E2E2E2'}}>{year}</p>
