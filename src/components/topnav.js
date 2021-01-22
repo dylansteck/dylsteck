@@ -7,7 +7,7 @@ const TopNav = () => {
     query {
       logoStyled: file(relativePath: { eq: "DS_Logo_Styled.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 450) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -18,7 +18,7 @@ const TopNav = () => {
   <header style={{display: 'grid', width: '100%', height: '15%', gridTemplateColumns: '10% 90%', position: 'fixed'}}>
     <Img
       fluid={data.logoStyled.childImageSharp.fluid}
-      style={{width: '5vw', objectFit: 'cover', margin: '5%', gridColumn: 1}}/>
+      style={{position: 'relative', margin: '5%', gridColumn: 1, objectFit: 'contain'}} className="logo"/>
     <ul style={{listStyleType: 'none', marginRight: '2.5%', gridColumn: 2, textAlign: 'right'}}>
       <Link to="/" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>Home</Link>
       <Link to="/about" style={{display: 'inline-block', marginLeft: '5%', color: '#545FAB', fontWeight: 'bold'}}>About</Link>

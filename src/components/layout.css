@@ -9,6 +9,7 @@ html{
 
 a{
   text-decoration: none;
+  color: #4B559E;
 }
 
 .fawesome{
@@ -51,6 +52,10 @@ a{
   .portfolio-piece-block{width: 20vw !important; height: 20vw !important; }
   .portfolio-piece-block-text p { font-size: 2.7vw !important; }
   .portfolio-piece-block-text a { font-size: 2.4vw !important; padding-bottom: 10% !important; }
+}
+
+img{
+  object-fit: contain !important;
 }
 /* html {
   font-family: sans-serif;
